@@ -46,7 +46,7 @@
  div.cover p {
      color: lightgray;
      text-align: center;
-     margin-top: 5px;
+     margin-top: 4px;
      margin-bottom: 4px;
      font-size: 14px;
  }
@@ -86,7 +86,7 @@
      background-color: #00000050;
      font-size: 14px;
      display: inline-block;
-     margin-top: 15px;
+     margin-top: 18px;
  }
 
  a.button-portfolio {
@@ -169,6 +169,7 @@
 
  div.bordure-texte p {
      margin-top: 0;
+     margin-bottom: 0;
  }
 
  div.bordure-texte a {
@@ -179,6 +180,10 @@
 
  div.bordure-texte a:hover {
     color: var(--color1);
+}
+
+div.bordure-texte ul {
+    margin-bottom: 0;
 }
 
  div.barre-verticale {
@@ -277,19 +282,19 @@ img.portfolio {
 /* RESPONSIVE DESIGN FOR MOBILE PHONES */
 @media only screen and (max-width: 767px) {
     img.cover-profile {
-        height: 100px;
+        height: 80px;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -40px;
         margin-top: 80px;
      }
     
      h1 {
-         font-size: 30px;
+         font-size: 26px;
          margin-top:6px;
      }
 
      h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
     
      div.cover p {
@@ -305,6 +310,10 @@ img.portfolio {
         border-left: 2px solid var(--color1);
         padding-left: 8px;
      }
+
+     div.cover-contact * {
+        font-size: 12px;
+    }
     
      div.cover-contact p {
         text-align: left;
@@ -318,6 +327,7 @@ img.portfolio {
     }
    
     div.section-grise1 {
+        padding-top: 0;
         padding-bottom: 60px;
     }
 
@@ -347,7 +357,7 @@ img.portfolio {
     }
 
     div.frame p.frame-title {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     div.frame img {
@@ -355,7 +365,7 @@ img.portfolio {
     }
 
     iframe {
-        height: 200px;
+        height: 360px;
      }
 
     div.bordure-texte p {
