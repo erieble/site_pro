@@ -330,6 +330,10 @@ img.portfolio {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .section p {
+        font-size: 14px;
+    }
    
     div.section-grise1 {
         padding-top: 0;
