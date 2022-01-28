@@ -9,6 +9,10 @@
     --color4: #656565;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
  body {
      margin: 0;
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -25,6 +29,7 @@
     background: url(../IMG/cover_overlay.png) no-repeat center/100% 100%, url(../IMG/cover.jpg) no-repeat center/cover;
     height: 360px;
     position: relative;
+    top: 0;
  }
 
  img.cover-profile {
@@ -86,18 +91,28 @@
      background-color: #00000050;
      font-size: 14px;
      display: inline-block;
-     margin-top: 18px;
+     margin-top: 17px;
  }
 
  a.button-portfolio {
     position: absolute;
-    top: 12px;
-    right: 20px;
+    bottom: 12px;
+    left: 16px;
  }
 
  a.contact-button:hover {
     color: white;
      border: 1px solid white;
+ }
+
+ div.language {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+ }
+
+ div.language img {
+    height: 30px;
  }
 
  .section {
@@ -138,7 +153,6 @@
      position: relative;
      left: 50%;
      margin-left: -75px;
-     margin-top: 0;
  }
 
  div.section-grise1 p {
@@ -175,6 +189,7 @@
  div.bordure-texte p {
      margin-top: 0;
      margin-bottom: 0;
+     margin-right: 10px;
  }
 
  div.bordure-texte a {
@@ -235,11 +250,19 @@ div.frame img {
     width: 120px;
 }
 
+div.retour img {
+    height: 30px;
+    position: relative;
+    left: 95%;
+    margin-top: 2%
+}
+
 /* PORTFOLIO */
 div.portfolio-header {
     height: 90px;
     background: url(../IMG/header.png) no-repeat center/cover;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .portfolio-header-title {
@@ -248,7 +271,7 @@ div.portfolio-header {
     font-size: 26px;
     font-weight: bold;
     color: white;
-    padding-top: 22px;
+    padding-top: 5px;
     padding-left: 15px;
 }
 
@@ -326,6 +349,10 @@ img.portfolio {
         margin-bottom: 0;
      }
 
+     div.language img {
+        height: 20px;
+     }
+
      .section {
         padding-left: 20px;
         padding-right: 20px;
@@ -377,18 +404,45 @@ img.portfolio {
         font-size: 14px;
     }
 
+    div.bordure-texte u {
+        font-size: 14px;
+    }
+    
+    div.bordure-texte ul {
+        font-size: 14px;
+    }
+
+    div.bordure-texte li {
+        font-size: 14px;
+    }
+
+    div.retour img {
+        width: 20px;
+        height: 20px;
+        left: 90%;
+        margin-top: 3%
+    }
+
     /* PORTFOLIO */
     .portfolio-header-title {
         font-size: 20px;
-        padding-top: 28px;
+        padding-top: 10px;
         padding-left: 8px;
     }
 
-    a.contact-button {
-        padding: 4px 10px;
+    a.portfolio-back {
         font-size: 12px;
-        margin-top: 15px;
+        font-weight: bold;
     }
+
+    a.contact-button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    a.button-portfolio {
+        left: 9px;
+     }
 
     h1.portfolio {
         font-size: 30px;
@@ -405,5 +459,9 @@ img.portfolio {
 
     .display-mobile {
         display: block;
+    }
+
+    div.comments p{
+        font-size: 14px;
     }
 }
